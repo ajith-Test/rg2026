@@ -10,20 +10,63 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
 
   <header class="nav">
-    <a class="logo" href="#">Resume<span>Globe</span>.com</a>
-    <nav>
-      <a href="#templates">Templates</a>
+
+    <!-- Logo -->
+    <a class="logo" href="https://ajith-test.github.io/rg2026/index.html">Resume<span>Globe</span>.com</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="https://ajith-test.github.io/rg2026/#templates">Templates</a>
       <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter</a>
-     <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
+      <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
       <a href="#plans">Plans</a>
       <a href="#why-us">Why Us?</a>
-      
+
     </nav>
-    <a class="btn small" href="https://www.resumeglobe.com">Create Resume</a>
+
+    <!-- Desktop CTA -->
+    <a class="btn small desktop-btn" href="https://www.resumeglobe.com">
+      Create Resume
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+      ☰
+    </button>
+
   </header>
+
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+
+    <a href="#templates">Templates</a>
+
+    <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">
+      Cover Letter
+    </a>
+
+    <a href="https://ajith-test.github.io/rg2026/ai-career-tools">
+      Career Tools
+    </a>
+
+    <a href="#plans">
+      Plans
+    </a>
+
+    <a href="#why-us">
+      Why Us?
+    </a>
+
+    <a class="mobile-create-btn" href="https://www.resumeglobe.com">
+      Create Resume
+    </a>
+
+  </div>
 
   <section class="hero">
     <div>
@@ -119,7 +162,7 @@
       </div>
     </div>
 
-<br>
+    <br>
 
     <div class="button-row">
       <a href="https://www.resumeglobe.com/" class="resume-btn">
@@ -187,7 +230,7 @@
       <div><b>✓</b><span>ATS + recruiter readability</span></div>
     </div>
 
- <br>
+    <br>
 
     <div class="button-row">
       <a href="https://www.resumeglobe.com/templates/" class="resume-btn">
@@ -340,15 +383,15 @@
     </div>
 
     <p class="terms">*Refunds and other conditions are subject to the applicable Terms & Conditions.</p>
-  
-  <br>
+
+    <br>
 
     <div class="button-row">
       <a href="https://www.resumeglobe.com/" class="resume-btn">
         Start Building your Resume Now!
       </a>
     </div>
-  
+
   </section>
 
   <section id="tips" class="section">
@@ -426,6 +469,43 @@
     -->
     </div>
   </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileNav = document.getElementById("mobileNav");
+
+    mobileMenuBtn.addEventListener("click", function () {
+
+      mobileNav.classList.toggle("active");
+
+      if (mobileNav.classList.contains("active")) {
+        mobileMenuBtn.innerHTML = "✕";
+        mobileMenuBtn.setAttribute("aria-label", "Close menu");
+      } else {
+        mobileMenuBtn.innerHTML = "☰";
+        mobileMenuBtn.setAttribute("aria-label", "Open menu");
+      }
+
+    });
+
+
+    /* Close menu when a link is clicked */
+
+    document.querySelectorAll(".mobile-nav a").forEach(function (link) {
+
+      link.addEventListener("click", function () {
+
+        mobileNav.classList.remove("active");
+
+        mobileMenuBtn.innerHTML = "☰";
+
+        mobileMenuBtn.setAttribute("aria-label", "Open menu");
+
+      });
+
+    });
+  </script>
+
 
 </body>
 
