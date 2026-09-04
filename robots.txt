@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ajith-test.github.io/rg2026/sitemap.xml
