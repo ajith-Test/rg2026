@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="ResumeGlobe - ATS-friendly resume builder with 60+ professionally structured templates, ATS scoring and career tools.">
+    <title>Blog – Free ATS Score & Resume Templates | ResumeGlobe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <header class="nav">
+
+        <!-- Logo -->
+        <a class="logo" href="https://ajith-test.github.io/rg2026/index.html">Resume<span>Globe</span>.com</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <a href="https://ajith-test.github.io/rg2026/index.html#templates">Templates</a>
+            <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter</a>
+            <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
+            <a href="https://ajith-test.github.io/rg2026/index.html#plans">Plans</a>
+            <a href="https://ajith-test.github.io/rg2026/index.html#why-us">Why Us?</a>
+            <!-- Desktop CTA -->
+            <a class="btn small desktop-btn" href="https://www.resumeglobe.com">
+                Create Resume
+            </a>
+        </nav>
+
+
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="https://ajith-test.github.io/rg2026/index.html#templates">Templates</a>
+        <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter</a>
+        <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
+        <a href="https://ajith-test.github.io/rg2026/index.html#plans">Plans</a>
+        <a href="https://ajith-test.github.io/rg2026/index.html#why-us">Why Us?</a>
+        <a class="mobile-create-btn" href="https://www.resumeglobe.com">Create Resume</a>
+
+    </div>
+
+    <!-- Till this line, header common for all pages -->
+
+    <!-- Blogs Style Start -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7faf8;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        .blog-header {
+            background: #111827;
+            color: white;
+            padding: 75px 20px;
+            text-align: center;
+        }
+
+        .blog-header .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .blog-header h1 {
+            max-width: 850px;
+            margin: 18px auto 15px;
+            font-size: 44px;
+            line-height: 1.2;
+        }
+
+        .blog-header p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 17px;
+            opacity: 0.95;
+        }
+
+        /* CONTAINER */
+
+        .container {
+            max-width: 1050px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        /* TABLE OF CONTENTS */
+
+        .toc {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 35px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 30px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #16834b;
+            font-weight: 600;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* ARTICLE */
+
+        .article {
+            background: white;
+            border-radius: 16px;
+            padding: 45px;
+            margin-bottom: 35px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+            scroll-margin-top: 25px;
+        }
+
+        .article-number {
+            color: #f1592b;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .article h2 {
+            font-size: 32px;
+            line-height: 1.3;
+            color: #111827;
+            margin: 8px 0 20px;
+        }
+
+        .article h3 {
+            font-size: 21px;
+            color: #111827;
+            margin-top: 30px;
+        }
+
+        .article p {
+            color: #4b5563;
+            margin: 15px 0;
+        }
+
+        .article ul,
+        .article ol {
+            color: #4b5563;
+            padding-left: 25px;
+        }
+
+        .article li {
+            margin-bottom: 8px;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            background: #eef8f2;
+            border-left: 4px solid #16834b;
+            padding: 18px 20px;
+            border-radius: 7px;
+            margin: 25px 0;
+        }
+
+        .highlight strong {
+            color: #14532d;
+        }
+
+        /* CTA */
+
+        .article-cta {
+            background: #f1f8f4;
+            border: 1px solid #d8eee0;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .article-cta h3 {
+            margin-top: 0;
+            color: #14532d;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #16834b;
+            color: white;
+            text-decoration: none;
+            padding: 11px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .cta-button:hover {
+            background: #0f693b;
+        }
+
+        /* FAQ */
+
+        .faq {
+            margin-top: 30px;
+        }
+
+        .faq details {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 14px 18px;
+        }
+
+        .faq summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .blog-header {
+                padding: 55px 20px;
+            }
+
+            .blog-header h1 {
+                font-size: 31px;
+            }
+
+            .blog-header p {
+                font-size: 15px;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article {
+                padding: 27px 20px;
+            }
+
+            .article h2 {
+                font-size: 26px;
+            }
+
+            .article h3 {
+                font-size: 19px;
+            }
+
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+        <!-- ========================================= -->
+        <!-- ARTICLE 1 -->
+        <!-- ========================================= -->
+
+        <article class="article" id="ats-2026">
+
+            <div class="article-number">Resume Guide · 01</div>
+
+            <h2>
+                Why an ATS-Friendly Resume Is Important in 2026
+            </h2>
+
+            <p>
+                Job searching has changed significantly. Many companies receive a large
+                number of applications for a single position, making it difficult for
+                recruiters to manually review every resume.
+            </p>
+
+            <p>
+                To help manage applications, organizations may use Applicant Tracking
+                Systems, commonly known as ATS. These systems help recruiters collect,
+                organize and process candidate applications.
+            </p>
+
+            <h3>What Is an ATS-Friendly Resume?</h3>
+
+            <p>
+                An ATS-friendly resume is structured so that important information can
+                be easily identified and understood by recruitment software as well as
+                human recruiters.
+            </p>
+
+            <p>This includes information such as:</p>
+
+            <ul>
+                <li>Professional experience</li>
+                <li>Job titles</li>
+                <li>Skills</li>
+                <li>Education</li>
+                <li>Certifications</li>
+                <li>Relevant keywords</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>
+                    Your resume should be easy for both recruitment technology and
+                    recruiters to understand.
+                </strong>
+            </div>
+
+            <h3>How Can You Make Your Resume ATS-Friendly?</h3>
+
+            <ol>
+                <li>Use clear and recognizable section headings.</li>
+                <li>Include relevant keywords from the job description.</li>
+                <li>Use a readable and professional layout.</li>
+                <li>Highlight relevant skills and achievements.</li>
+                <li>Review your resume before submitting an application.</li>
+            </ol>
+
+            <h3>Final Thoughts</h3>
+
+            <p>
+                An ATS-friendly resume is not simply about passing software. It is about
+                presenting your qualifications clearly and making it easier for recruiters
+                to understand your experience.
+            </p>
+
+            <div class="article-cta">
+                <h3>Ready to Build an ATS-Friendly Resume?</h3>
+                <p>Create your resume and check your ATS score with ResumeGlobe.</p>
+                <a class="cta-button" href="https://www.resumeglobe.com">
+                    Create Your Resume
+                </a>
+            </div>
+
+        </article>
+
+        </div>
+
+        <!-- Below this line, footer common for all pages -->
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img class="hero-image" src="https://resumeglobe.com/assets/ResumeGlobeLogo._L2Nf6Ag.svg"
+                        alt="Resume Builder site logo">
+
+                    <style>
+                        .hero-image {
+                            width: 100%;
+                            max-width: 200px;
+                            height: auto;
+                            filter: brightness(0) invert(1);
+                        }
+                    </style>
+                    <!-- <a href="https://ajith-test.github.io/rg2026/index.html" class="footer-logo">
+                    Resume<span>Globe</span>.com
+                </a> -->
+
+                    <p>
+                        Build professional, ATS-friendly resumes and take the next step
+                        in your career with ResumeGlobe.
+                    </p>
+                </div>
+
+
+
+                <!-- Resume & Cover Letter -->
+                <div class="footer-column">
+                    <h4>Resume & Cover Letter</h4>
+
+                    <a href="https://ajith-test.github.io/rg2026/ats-resume-builder.html">ATS Resume Builder</a>
+                    <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter Builder</a>
+                    <a href="https://ajith-test.github.io/rg2026/free-ats-score-checker.html">Free ATS Score</a>
+                    <a href="https://ajith-test.github.io/rg2026/resume-builder-for-freshers.html">Freshers Resume</a>
+                </div>
+
+
+                <!-- Career -->
+                <div class="footer-column">
+                    <h4>ATS & Career Tools</h4>
+
+                    <a href="https://ajith-test.github.io/rg2026/what-is-an-ats.html">What is an ATS</a>
+                    <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#career-map">AI Career Map</a>
+                    <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#career-toolkit">AI Career
+                        Toolkit</a>
+                    <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#mcq-test">AI MCQ Test</a>
+                </div>
+
+
+                <!-- Company -->
+
+                <!--
+    <div class="footer-column">
+      <h4>Company</h4>
+
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+-->
+
+                <div class="footer-column">
+                    <h4>Blog & SocialMedia</h4>
+                    <!-- SocialMedia links -->
+                    <a href="https://www.instagram.com/resumeglobe_">Instagram</a>
+                    <a
+                        href="https://www.facebook.com/people/Resume-Globe/pfbid02LqvNFhkEmM2ZHStzNbFhWss4cBpYqHQSUiowmZMbqn49jtpF7mf8f76ZsXu9KCzSl/">Facebook</a>
+                    <a href="https://www.linkedin.com/company/resumeglobe">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/resumeglobe">Blog</a>
+                </div>
+            </div>
+
+
+            <!-- Bottom Footer -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 ResumeGlobe.com. All rights reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+        </footer>
+
+        <script>
+            const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+            const mobileNav = document.getElementById("mobileNav");
+
+            mobileMenuBtn.addEventListener("click", function () {
+
+                mobileNav.classList.toggle("active");
+
+                if (mobileNav.classList.contains("active")) {
+                    mobileMenuBtn.innerHTML = "✕";
+                    mobileMenuBtn.setAttribute("aria-label", "Close menu");
+                } else {
+                    mobileMenuBtn.innerHTML = "☰";
+                    mobileMenuBtn.setAttribute("aria-label", "Open menu");
+                }
+
+            });
+
+
+            /* Close menu when a link is clicked */
+
+            document.querySelectorAll(".mobile-nav a").forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    mobileNav.classList.remove("active");
+
+                    mobileMenuBtn.innerHTML = "☰";
+
+                    mobileMenuBtn.setAttribute("aria-label", "Open menu");
+
+                });
+
+            });
+        </script>
+
+
+    </body>
+
+</html>
