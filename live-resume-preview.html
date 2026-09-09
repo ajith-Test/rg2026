@@ -1,0 +1,1527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="ResumeGlobe - ATS-friendly resume builder with 60+ professionally structured templates, ATS scoring and career tools.">
+    <title>Live Resume Preview – Free ATS Score & Resume Templates | ResumeGlobe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <header class="nav">
+
+        <!-- Logo -->
+        <a class="logo" href="https://ajith-test.github.io/rg2026/index.html">Resume<span>Globe</span>.com</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <a href="https://ajith-test.github.io/rg2026/index.html#templates">Templates</a>
+            <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter</a>
+            <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
+            <a href="https://ajith-test.github.io/rg2026/index.html#plans">Plans</a>
+            <a href="https://ajith-test.github.io/rg2026/index.html#why-us">Why Us?</a>
+            <!-- Desktop CTA -->
+            <a class="btn small desktop-btn" href="https://www.resumeglobe.com">
+                Create Resume
+            </a>
+        </nav>
+
+
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="https://ajith-test.github.io/rg2026/index.html#templates">Templates</a>
+        <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter</a>
+        <a href="https://ajith-test.github.io/rg2026/ai-career-tools">Career Tools</a>
+        <a href="https://ajith-test.github.io/rg2026/index.html#plans">Plans</a>
+        <a href="https://ajith-test.github.io/rg2026/index.html#why-us">Why Us?</a>
+        <a class="mobile-create-btn" href="https://www.resumeglobe.com">Create Resume</a>
+
+    </div>
+
+    <!-- Till this line, header common for all pages -->
+
+
+    <section class="rg-career-tools-dark">
+
+        <div class="rg-career-container">
+
+
+    <!-- HERO -->
+
+    <div class="rg-live-hero">
+
+      <h1>
+        Build Your Resume.
+        <span>See Every Change Live.</span>
+      </h1>
+
+      <p>
+        Enter your information section by section and watch your
+        professional resume update instantly. No guessing how your
+        final resume will look before you download it.
+      </p>
+
+      <div class="rg-live-actions">
+
+        <a href="https://www.resumeglobe.com"
+           class="rg-ats-primary-btn">
+
+          Start Building My Resume
+
+          <span>→</span>
+
+        </a>
+
+        <a href="#live-editor"
+           class="rg-ats-secondary-btn">
+
+          See How It Works
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <BR></BR>
+  
+  <section class="rg-live-page">
+
+
+  <div class="rg-live-container">
+
+
+    <!-- MAIN LIVE EDITOR VISUAL -->
+
+    <div class="rg-editor-wrapper"
+         id="live-editor">
+
+
+      <!-- LEFT EDITOR -->
+
+      <div class="rg-editor-panel">
+
+
+        <div class="rg-editor-header">
+
+          <div>
+
+            <strong>
+              Resume Editor
+            </strong>
+
+            <span>
+              Build section by section
+            </span>
+
+          </div>
+
+          <div class="rg-save-status">
+            ✓ Saved
+          </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="rg-progress">
+
+          <div class="rg-progress-top">
+
+            <span>
+              Resume Progress
+            </span>
+
+            <strong>
+              65%
+            </strong>
+
+          </div>
+
+          <div class="rg-progress-bar">
+
+            <div></div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PERSONAL INFORMATION -->
+
+        <div class="rg-editor-section">
+
+          <div class="rg-section-title">
+
+            <span class="rg-section-number">
+              01
+            </span>
+
+            <div>
+
+              <strong>
+                Personal Information
+              </strong>
+
+              <small>
+                Tell recruiters who you are
+              </small>
+
+            </div>
+
+            <span class="rg-complete">
+              ✓
+            </span>
+
+          </div>
+
+
+          <div class="rg-fields">
+
+            <label>
+
+              Full Name
+
+              <input
+                type="text"
+                value="Arun Kumar"
+                oninput="updatePreview()">
+
+            </label>
+
+
+            <label>
+
+              Job Title
+
+              <input
+                type="text"
+                value="Software Developer"
+                oninput="updatePreview()">
+
+            </label>
+
+
+            <label>
+
+              Email
+
+              <input
+                type="email"
+                value="arun@email.com"
+                oninput="updatePreview()">
+
+            </label>
+
+
+            <label>
+
+              Phone
+
+              <input
+                type="text"
+                value="+91 98765 43210"
+                oninput="updatePreview()">
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- SUMMARY -->
+
+        <div class="rg-editor-section">
+
+          <div class="rg-section-title">
+
+            <span class="rg-section-number">
+              02
+            </span>
+
+            <div>
+
+              <strong>
+                Professional Summary
+              </strong>
+
+              <small>
+                Make your first impression count
+              </small>
+
+            </div>
+
+            <span class="rg-ai">
+              AI
+            </span>
+
+          </div>
+
+
+          <textarea
+            oninput="updateSummary()"
+            id="summaryInput">Motivated software developer with strong knowledge of Java, SQL and web technologies. Passionate about building reliable applications and continuously improving technical skills.</textarea>
+
+
+          <button class="rg-ai-btn">
+
+            ✨ Improve with AI
+
+          </button>
+
+        </div>
+
+
+
+        <!-- EXPERIENCE -->
+
+        <div class="rg-editor-section">
+
+          <div class="rg-section-title">
+
+            <span class="rg-section-number">
+              03
+            </span>
+
+            <div>
+
+              <strong>
+                Experience
+              </strong>
+
+              <small>
+                Show what you achieved
+              </small>
+
+            </div>
+
+            <button class="rg-add">
+              + Add
+            </button>
+
+          </div>
+
+
+          <div class="rg-experience-item">
+
+            <strong>
+              Software Developer
+            </strong>
+
+            <span>
+              ABC Technologies · 2024 – Present
+            </span>
+
+            <p>
+              Developed web applications using Java and Spring Boot.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- SKILLS -->
+
+        <div class="rg-editor-section">
+
+          <div class="rg-section-title">
+
+            <span class="rg-section-number">
+              04
+            </span>
+
+            <div>
+
+              <strong>
+                Skills
+              </strong>
+
+              <small>
+                Match your target role
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <div class="rg-skill-input">
+
+            <span>
+              Java
+            </span>
+
+            <span>
+              SQL
+            </span>
+
+            <span>
+              Spring Boot
+            </span>
+
+            <span>
+              Git
+            </span>
+
+            <span>
+              HTML
+            </span>
+
+            <button>
+              + Add Skill
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- EDUCATION -->
+
+        <div class="rg-editor-section">
+
+          <div class="rg-section-title">
+
+            <span class="rg-section-number">
+              05
+            </span>
+
+            <div>
+
+              <strong>
+                Education
+              </strong>
+
+              <small>
+                Add your academic background
+              </small>
+
+            </div>
+
+            <button class="rg-add">
+              + Add
+            </button>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- RIGHT LIVE PREVIEW -->
+
+      <div class="rg-preview-panel">
+
+
+        <div class="rg-preview-toolbar">
+
+          <div>
+
+            <strong>
+              Live Preview
+            </strong>
+
+            <span>
+              Updates instantly as you type
+            </span>
+
+          </div>
+
+
+          <div class="rg-preview-actions">
+
+            <button>
+              −
+            </button>
+
+            <span>
+              85%
+            </span>
+
+            <button>
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- RESUME PAPER -->
+
+        <div class="rg-paper-wrapper">
+
+          <div class="rg-paper"
+               id="resumePreview">
+
+
+            <div class="rg-resume-name">
+              Arun Kumar
+            </div>
+
+
+            <div class="rg-resume-title">
+              Software Developer
+            </div>
+
+
+            <div class="rg-contact">
+
+              arun@email.com
+              <span>•</span>
+              +91 98765 43210
+              <span>•</span>
+              Chennai, India
+
+            </div>
+
+
+
+            <div class="rg-resume-divider"></div>
+
+
+
+            <!-- SUMMARY -->
+
+            <div class="rg-resume-section">
+
+              <h3>
+                PROFESSIONAL SUMMARY
+              </h3>
+
+              <p id="previewSummary">
+
+                Motivated software developer with strong knowledge
+                of Java, SQL and web technologies. Passionate about
+                building reliable applications and continuously
+                improving technical skills.
+
+              </p>
+
+            </div>
+
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="rg-resume-section">
+
+              <h3>
+                EXPERIENCE
+              </h3>
+
+
+              <div class="rg-resume-job">
+
+                <div class="rg-job-top">
+
+                  <strong>
+                    Software Developer
+                  </strong>
+
+                  <span>
+                    2024 – Present
+                  </span>
+
+                </div>
+
+                <div class="rg-company">
+                  ABC Technologies
+                </div>
+
+                <ul>
+
+                  <li>
+                    Developed web applications using Java and
+                    Spring Boot.
+                  </li>
+
+                  <li>
+                    Worked with SQL databases and Git-based
+                    development workflows.
+                  </li>
+
+                  <li>
+                    Collaborated with team members to deliver
+                    application features.
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- SKILLS -->
+
+            <div class="rg-resume-section">
+
+              <h3>
+                TECHNICAL SKILLS
+              </h3>
+
+              <p>
+
+                <strong>Programming:</strong>
+                Java, SQL
+
+                <br>
+
+                <strong>Frameworks:</strong>
+                Spring Boot
+
+                <br>
+
+                <strong>Tools:</strong>
+                Git, HTML
+
+              </p>
+
+            </div>
+
+
+
+            <!-- EDUCATION -->
+
+            <div class="rg-resume-section">
+
+              <h3>
+                EDUCATION
+              </h3>
+
+              <div class="rg-education">
+
+                <strong>
+                  Bachelor of Engineering
+                </strong>
+
+                <span>
+                  ABC University · 2024
+                </span>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PREVIEW FOOTER -->
+
+        <div class="rg-preview-footer">
+
+          <div class="rg-preview-check">
+
+            <span>
+              ✓
+            </span>
+
+            <div>
+
+              <strong>
+                Resume looks good
+              </strong>
+
+              <small>
+                Your changes are reflected instantly
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <a href="https://www.resumeglobe.com"
+             class="rg-download-btn">
+
+            Download Resume
+
+            <span>
+              ↓
+            </span>
+
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- DIFFERENTIATOR -->
+
+    <div class="rg-difference">
+
+      <div class="rg-section-heading">
+
+        <span>
+          WHY LIVE PREVIEW MATTERS
+        </span>
+
+        <h2>
+          Don't Build Blind.
+          <strong>See Your Resume Before You Download.</strong>
+        </h2>
+
+        <p>
+          Traditional resume creation often means filling forms,
+          downloading a file, opening it, finding formatting problems,
+          and repeating the process. ResumeGlobe brings the editing
+          experience and the final resume together.
+        </p>
+
+      </div>
+
+
+      <div class="rg-difference-grid">
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            ⚡
+          </div>
+
+          <h3>
+            Instant Updates
+          </h3>
+
+          <p>
+            Every change you make appears immediately in the resume
+            preview. No repeated downloads just to check your work.
+          </p>
+
+        </div>
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            👀
+          </div>
+
+          <h3>
+            See Before Downloading
+          </h3>
+
+          <p>
+            Check spacing, section order, content length and overall
+            appearance before you download your final resume.
+          </p>
+
+        </div>
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            🧩
+          </div>
+
+          <h3>
+            Section-by-Section Editing
+          </h3>
+
+          <p>
+            Add your information step by step instead of facing a
+            confusing blank resume template.
+          </p>
+
+        </div>
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            🤖
+          </div>
+
+          <h3>
+            AI-Assisted Writing
+          </h3>
+
+          <p>
+            Get help improving summaries, bullet points and resume
+            content while keeping control over what appears in your resume.
+          </p>
+
+        </div>
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            🎯
+          </div>
+
+          <h3>
+            Job-Focused Content
+          </h3>
+
+          <p>
+            Build your resume around the role you are targeting and
+            highlight the skills that matter for that opportunity.
+          </p>
+
+        </div>
+
+
+        <div class="rg-difference-card">
+
+          <div class="rg-difference-icon">
+            📄
+          </div>
+
+          <h3>
+            Download What You See
+          </h3>
+
+          <p>
+            Review your final layout before downloading so there are
+            fewer surprises between editing and your finished document.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- COMPARISON -->
+
+    <div class="rg-comparison">
+
+      <div class="rg-section-heading">
+
+        <span>
+          THE OLD WAY VS RESUMEGLOBE
+        </span>
+
+        <h2>
+          Why Make Resume Creation
+          <strong>More Complicated?</strong>
+        </h2>
+
+      </div>
+
+
+      <div class="rg-comparison-table">
+
+
+        <div class="rg-comparison-row rg-comparison-header">
+
+          <div>
+            Resume Creation
+          </div>
+
+          <div>
+            Traditional Approach
+          </div>
+
+          <div>
+            ResumeGlobe
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Editing
+          </div>
+
+          <div>
+            Fill information and wait
+          </div>
+
+          <div class="rg-positive">
+            ✓ Edit and see instantly
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Preview
+          </div>
+
+          <div>
+            Often checked after export
+          </div>
+
+          <div class="rg-positive">
+            ✓ Always visible
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Formatting
+          </div>
+
+          <div>
+            Fix manually
+          </div>
+
+          <div class="rg-positive">
+            ✓ Automatically reflected
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Sections
+          </div>
+
+          <div>
+            Start with a blank template
+          </div>
+
+          <div class="rg-positive">
+            ✓ Guided section-by-section
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Content Help
+          </div>
+
+          <div>
+            Write everything yourself
+          </div>
+
+          <div class="rg-positive">
+            ✓ AI assistance
+          </div>
+
+        </div>
+
+
+        <div class="rg-comparison-row">
+
+          <div>
+            Final Check
+          </div>
+
+          <div>
+            Download → check → edit → download
+          </div>
+
+          <div class="rg-positive">
+            ✓ Review before download
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- HOW IT WORKS -->
+
+    <div class="rg-how">
+
+      <div class="rg-section-heading">
+
+        <span>
+          SIMPLE PROCESS
+        </span>
+
+        <h2>
+          From Blank Page to
+          <strong>Professional Resume</strong>
+        </h2>
+
+      </div>
+
+
+      <div class="rg-how-grid">
+
+
+        <div class="rg-how-step">
+
+          <div>
+            01
+          </div>
+
+          <h3>
+            Choose a Template
+          </h3>
+
+          <p>
+            Start with a professional resume design suitable
+            for your career goals.
+          </p>
+
+        </div>
+
+
+        <div class="rg-how-step">
+
+          <div>
+            02
+          </div>
+
+          <h3>
+            Enter Your Details
+          </h3>
+
+          <p>
+            Complete your resume section by section with guided
+            fields and helpful prompts.
+          </p>
+
+        </div>
+
+
+        <div class="rg-how-step">
+
+          <div>
+            03
+          </div>
+
+          <h3>
+            Watch It Update
+          </h3>
+
+          <p>
+            See your resume change instantly as you add or
+            edit your information.
+          </p>
+
+        </div>
+
+
+        <div class="rg-how-step">
+
+          <div>
+            04
+          </div>
+
+          <h3>
+            Review & Download
+          </h3>
+
+          <p>
+            Check the final layout and download your completed
+            resume when you're ready.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+<!-- ResumeGlobe Multi-Device Experience -->
+<section class="device-demo">
+  <div class="device-demo-header">
+    <span class="device-badge">BUILT FOR EVERY SCREEN</span>
+
+    <h2>Create Your Resume Anywhere</h2>
+
+    <p>
+      ResumeGlobe is optimized for every screen. Create, edit and download
+      your resume and cover letter seamlessly from your mobile, tablet or desktop.
+    </p>
+
+    <div class="device-switcher">
+      <button class="device-btn active" data-device="mobile">📱 Mobile</button>
+      <button class="device-btn" data-device="tablet">📲 Tablet</button>
+      <button class="device-btn" data-device="desktop">💻 Desktop</button>
+    </div>
+  </div>
+
+  <div class="device-preview-area">
+
+    <!-- Mobile -->
+    <div class="device-frame mobile-frame active" id="mobile">
+      <div class="device-top">
+        <span>9:41</span>
+        <span>● ● ●</span>
+      </div>
+
+      <div class="device-screen">
+        <!--<div class="mini-logo">Resume<span>Globe</span></div> -->
+
+        <img class="hero-image-mobile" src="https://resumeglobe.com/assets/ResumeGlobeLogo._L2Nf6Ag.svg" alt="Resume Builder site logo">
+<style>
+  .hero-image-mobile {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+</style>
+
+        
+        <h3>Create Your Resume</h3>
+
+        <div class="mini-input">👤 Your Name</div>
+        <div class="mini-input">💼 Job Title</div>
+        <div class="mini-input">📝 Professional Summary</div>
+        <div class="mini-input">⭐ Skills</div>
+
+        <button class="mini-button">Preview Resume →</button>
+      </div>
+    </div>
+
+    <!-- Tablet -->
+    <div class="device-frame tablet-frame" id="tablet">
+      <div class="tablet-screen">
+
+        <!-- <div class="mini-logo">Resume<span>Globe</span></div> -->
+         <img class="hero-image-tab" src="https://resumeglobe.com/assets/ResumeGlobeLogo._L2Nf6Ag.svg" alt="Resume Builder site logo">
+<style>
+  .hero-image-tab {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+</style>
+        <div class="tablet-content">
+          <div class="editor-panel">
+            <h3>Build Your Resume</h3>
+            <div class="mini-input">👤 Personal Information</div>
+            <div class="mini-input">💼 Experience</div>
+            <div class="mini-input">⭐ Skills</div>
+            <div class="mini-input">🎓 Education</div>
+          </div>
+
+          <div class="resume-preview">
+            <strong>ARUN KUMAR</strong>
+            <small>Software Developer</small>
+
+            <hr>
+
+            <b>Professional Summary</b>
+            <p>
+              Results-driven software developer with experience
+              building reliable applications.
+            </p>
+
+            <b>Skills</b>
+            <p>Java • Selenium • SQL • Git • Jenkins</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="device-frame desktop-frame" id="desktop">
+      <div class="desktop-top">
+        <span>●</span>
+        <span>●</span>
+        <span>●</span>
+      </div>
+
+      <div class="desktop-screen">
+
+        <aside>
+          <!-- <div class="mini-logo">Resume<span>Globe</span></div> -->
+           <img class="hero-image" src="https://resumeglobe.com/assets/ResumeGlobeLogo._L2Nf6Ag.svg" alt="Resume Builder site logo">
+
+          <div class="side-item active">Personal Information</div>
+          <div class="side-item">Professional Summary</div>
+          <div class="side-item">Experience</div>
+          <div class="side-item">Skills</div>
+          <div class="side-item">Education</div>
+
+          <button class="mini-button">Save Resume</button>
+        </aside>
+
+        <main class="desktop-editor">
+          <h3>Build Your Resume</h3>
+
+          <div class="editor-grid">
+
+            <div>
+              <label>Full Name</label>
+              <div class="input-box">Arun Kumar</div>
+
+              <label>Job Title</label>
+              <div class="input-box">Software Developer</div>
+
+              <label>Professional Summary</label>
+              <div class="input-box large">
+                Results-driven software developer with experience
+                building reliable applications.
+              </div>
+            </div>
+
+            <div class="large-resume">
+              <strong>ARUN KUMAR</strong>
+              <span>Software Developer</span>
+
+              <hr>
+
+              <b>SUMMARY</b>
+              <p>
+                Results-driven software developer with experience
+                building reliable applications.
+              </p>
+
+              <b>EXPERIENCE</b>
+              <p>Software Developer — 2023–Present</p>
+
+              <b>SKILLS</b>
+              <p>Java • Selenium • SQL • Git • Jenkins</p>
+
+              <b>EDUCATION</b>
+              <p>Bachelor's Degree</p>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="device-message">
+    <strong id="deviceTitle">Designed for your phone.</strong>
+    <span id="deviceText">
+      Create or update your resume even when you're away from your computer.
+    </span>
+  </div>
+</section>
+
+<script>
+const deviceButtons = document.querySelectorAll(".device-btn");
+const deviceFrames = document.querySelectorAll(".device-frame");
+
+const deviceTitle = document.getElementById("deviceTitle");
+const deviceText = document.getElementById("deviceText");
+
+const deviceInfo = {
+  mobile: {
+    title: "Designed for your phone.",
+    text: "Create or update your resume even when you're away from your computer."
+  },
+  tablet: {
+    title: "Optimized for tablets.",
+    text: "Get a comfortable editing experience with more space to build your career documents."
+  },
+  desktop: {
+    title: "Powerful on desktop.",
+    text: "Build your resume with a spacious editor and live preview side by side."
+  }
+};
+
+deviceButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const device = button.dataset.device;
+
+    deviceButtons.forEach(btn => btn.classList.remove("active"));
+    deviceFrames.forEach(frame => frame.classList.remove("active"));
+
+    button.classList.add("active");
+    document.getElementById(device).classList.add("active");
+
+    deviceTitle.textContent = deviceInfo[device].title;
+    deviceText.textContent = deviceInfo[device].text;
+
+  });
+
+});
+</script>
+
+    <!-- FINAL CTA -->
+
+    <div class="rg-final-cta">
+
+      <div>
+
+        <span>
+          READY TO SEE YOUR RESUME COME TO LIFE?
+        </span>
+
+        <h2>
+          Build It.
+          <strong>See It.</strong>
+          Improve It.
+        </h2>
+
+        <p>
+          Create your ResumeGlobe resume and see every change
+          in real time before downloading.
+        </p>
+
+      </div>
+
+
+      <a href="https://www.resumeglobe.com"
+         class="rg-final-btn">
+
+        Start Building My Resume
+
+        <span>
+          →
+        </span>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<script>
+
+function updatePreview() {
+
+  const inputs =
+    document.querySelectorAll(
+      ".rg-fields input"
+    );
+
+  const name =
+    inputs[0]?.value || "Your Name";
+
+  const title =
+    inputs[1]?.value || "Professional";
+
+  const email =
+    inputs[2]?.value || "your@email.com";
+
+  const phone =
+    inputs[3]?.value || "+91 XXXXX XXXXX";
+
+
+  document.querySelector(
+    ".rg-resume-name"
+  ).textContent = name;
+
+
+  document.querySelector(
+    ".rg-resume-title"
+  ).textContent = title;
+
+
+  document.querySelector(
+    ".rg-contact"
+  ).innerHTML =
+    email +
+    " <span>•</span> " +
+    phone +
+    " <span>•</span> Chennai, India";
+
+}
+
+
+function updateSummary() {
+
+  const input =
+    document.getElementById(
+      "summaryInput"
+    );
+
+  const preview =
+    document.getElementById(
+      "previewSummary"
+    );
+
+
+  preview.textContent =
+    input.value ||
+    "Your professional summary will appear here.";
+
+}
+
+</script>
+
+
+     <!-- Below this line, footer common for all pages -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+              <img class="hero-image" src="https://resumeglobe.com/assets/ResumeGlobeLogo._L2Nf6Ag.svg" alt="Resume Builder site logo">
+
+<style>
+.hero-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+</style>
+               <!-- <a href="https://ajith-test.github.io/rg2026/index.html" class="footer-logo">
+                    Resume<span>Globe</span>.com
+                </a> -->
+             
+                <p>
+                    Build professional, ATS-friendly resumes and take the next step
+                    in your career with ResumeGlobe.
+                </p>
+            </div>
+
+
+
+            <!-- Resume & Cover Letter -->
+            <div class="footer-column">
+                <h4>Resume & Cover Letter</h4>
+
+                <a href="https://ajith-test.github.io/rg2026/ats-resume-builder.html">ATS Resume Builder</a>
+                <a href="https://ajith-test.github.io/rg2026/cover-letter-builder.html">Cover Letter Builder</a>
+                <a href="https://ajith-test.github.io/rg2026/free-ats-score-checker.html">Free ATS Score</a>
+                <a href="https://ajith-test.github.io/rg2026/resume-builder-for-freshers.html">Freshers Resume</a>
+            </div>
+
+
+            <!-- Career -->
+            <div class="footer-column">
+                <h4>ATS & Career Tools</h4>
+
+                <a href="https://ajith-test.github.io/rg2026/what-is-an-ats.html">What is an ATS</a>
+                <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#career-map">AI Career Map</a>
+                <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#career-toolkit">AI Career Toolkit</a>
+                <a href="https://ajith-test.github.io/rg2026/ai-career-tools.html#mcq-test">AI MCQ Test</a>
+            </div>
+
+
+            <!-- Company -->
+
+            <!--
+    <div class="footer-column">
+      <h4>Company</h4>
+
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+-->
+
+            <div class="footer-column">
+                <h4>Blog & SocialMedia</h4>
+                <!-- SocialMedia links -->
+                <a href="https://www.instagram.com/resumeglobe_">Instagram</a>
+                <a
+                    href="https://www.facebook.com/people/Resume-Globe/pfbid02LqvNFhkEmM2ZHStzNbFhWss4cBpYqHQSUiowmZMbqn49jtpF7mf8f76ZsXu9KCzSl/">Facebook</a>
+                <a href="https://www.linkedin.com/company/resumeglobe">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/resumeglobe">Blog</a>
+            </div>
+        </div>
+
+
+        <!-- Bottom Footer -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ResumeGlobe.com. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileNav = document.getElementById("mobileNav");
+
+        mobileMenuBtn.addEventListener("click", function () {
+
+            mobileNav.classList.toggle("active");
+
+            if (mobileNav.classList.contains("active")) {
+                mobileMenuBtn.innerHTML = "✕";
+                mobileMenuBtn.setAttribute("aria-label", "Close menu");
+            } else {
+                mobileMenuBtn.innerHTML = "☰";
+                mobileMenuBtn.setAttribute("aria-label", "Open menu");
+            }
+
+        });
+
+
+        /* Close menu when a link is clicked */
+
+        document.querySelectorAll(".mobile-nav a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                mobileNav.classList.remove("active");
+
+                mobileMenuBtn.innerHTML = "☰";
+
+                mobileMenuBtn.setAttribute("aria-label", "Open menu");
+
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
